@@ -1,0 +1,45 @@
+<div class="row">
+  <nav class="navbar navbar-fixed col-md-1 bg-light">
+    <ul class="navbar navbar-nav">
+      <li>
+        <a [routerLink]="['/dash/input']">Input</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/button']">Button</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/data']">Data</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/panel']">Panel</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/over']">Overlay</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/file']">File</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/menu']">Menu</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/chart']">Chart</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/message']">Messages</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/multi']">Multimedia</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/drag']">DragNDrop</a>
+      </li>
+      <li>
+        <a [routerLink]="['/dash/misc']">Misc</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container col-md-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>
