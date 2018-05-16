@@ -36,7 +36,8 @@ import {
   GrowlModule,
   GalleriaModule,
   DragDropModule,
-  DataGridModule
+  DataGridModule,
+  TreeTableModule
  } from 'primeng/primeng';
 import {CommonModule} from '@angular/common';
 
@@ -80,7 +81,8 @@ import {CommonModule} from '@angular/common';
     GrowlModule,
     GalleriaModule,
     DragDropModule,
-    DataGridModule
+    DataGridModule,
+    TreeTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
