@@ -29,7 +29,8 @@ import {
   SidebarModule,
   FileUploadModule,
   MenuModule,
-  TabMenuModule
+  TabMenuModule,
+  ChartModule
  } from 'primeng/primeng';
 import {CommonModule} from '@angular/common';
 
@@ -66,8 +67,8 @@ import {CommonModule} from '@angular/common';
     SidebarModule,
     FileUploadModule,
     MenuModule,
-    TabMenuModule
-    
+    TabMenuModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
