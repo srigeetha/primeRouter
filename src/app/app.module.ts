@@ -34,7 +34,9 @@ import {
   MessagesModule,
   MessageModule,
   GrowlModule,
-  GalleriaModule
+  GalleriaModule,
+  DragDropModule,
+  DataGridModule
  } from 'primeng/primeng';
 import {CommonModule} from '@angular/common';
 
@@ -76,7 +78,9 @@ import {CommonModule} from '@angular/common';
     MessagesModule,
     MessageModule,
     GrowlModule,
-    GalleriaModule
+    GalleriaModule,
+    DragDropModule,
+    DataGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

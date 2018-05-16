@@ -8,3 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 }
+export interface Car {
+  vin:string;
+  year:string;
+  brand:string;
+  color:string;
+}
