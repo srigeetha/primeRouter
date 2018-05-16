@@ -1,1 +1,37 @@
-<p-splitButton label="Save" icon="fa-check" (onClick)="save()" [model]="items"></p-splitButton>
+<h5>Button Component</h5>
+<p-button (onClick)="count()" label="Click"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-check" label="Click"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-check" iconPos="right" label="Click"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-close"></p-button>
+
+<p-button (onClick)="count()" icon="fa fa-fw fa-check" [disabled]="true" label="Disabled"></p-button>
+
+<h5>Button Directive</h5>
+<button pButton type="button" (click)="count()" label="Click"></button>
+
+<button pButton type="button" (click)="count()" icon="fa-check" label="Click"></button>
+
+<button pButton type="button" (click)="count()" icon="fa-check" iconPos="right" label="Click"></button>
+
+<button pButton type="button" (click)="count()" icon="fa-close"></button>
+
+<button pButton type="button" (click)="count()" icon="fa-check" [disabled]="true" label="Disabled"></button>
+
+<h5>Severity Buttons</h5>
+
+<button pButton type="button" (click)="count()" label="Primary"></button>
+
+<button pButton type="button" (click)="count()" label="Secondary" class="ui-button-secondary"></button>
+
+<button pButton type="button" (click)="count()" label="Success" class="ui-button-success"></button>
+
+<button pButton type="button" (click)="count()" label="Info"  class="ui-button-info"></button>
+
+<button pButton type="button" (click)="count()" label="Warning"  class="ui-button-warning"></button>
+
+<button pButton type="button" (click)="count()" label="Danger"  class="ui-button-danger"></button>
+<br>
+Number of clicks: {{clicks}}

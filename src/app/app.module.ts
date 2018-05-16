@@ -18,9 +18,18 @@ import { MultimediaComponent } from './multimedia/multimedia.component';
 import { DragndropComponent } from './dragndrop/dragndrop.component';
 import { MiscComponent } from './misc/misc.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { RadioButtonModule,CheckboxModule,SplitButtonModule } from 'primeng/primeng';
-
+import { 
+  RadioButtonModule,
+  CheckboxModule,
+  ButtonModule,
+  PaginatorModule,
+  AccordionModule,
+  TabViewModule,
+  PanelModule,
+  SidebarModule
+ } from 'primeng/primeng';
 import {CommonModule} from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +55,12 @@ import {CommonModule} from '@angular/common';
     AngularFontAwesomeModule,
     CheckboxModule,
     RadioButtonModule,
-    SplitButtonModule
+    ButtonModule,
+    PaginatorModule,
+    AccordionModule,
+    TabViewModule,
+    PanelModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
