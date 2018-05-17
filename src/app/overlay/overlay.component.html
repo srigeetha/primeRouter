@@ -1,11 +1,17 @@
 
-<p-sidebar [(visible)]="display1">
+<p-sidebar [(visible)]="display1" appendTo="body" position="right">
     Content
 </p-sidebar>
 
-<button type="text" (click)="display1 = true" pButton >show</button>
+<button type="text" (click)="display1 = true" pButton label="Right-Navbar" ></button>
 
-<p-dialog header="Godfather I" [(visible)]="display" >
+<p-sidebar [(visible)]="display2" appendTo="body" position="left">
+        Content
+    </p-sidebar>
+    
+    <button type="text" (click)="display2 = true" pButton label="Left-Navbar" ></button>
+
+<p-dialog header="Godfather I" [(visible)]="display" [contentStyle]="{'width': '650px','height': '150px'}"  [modal]="true" appendTo="body">
     <span>The story begins as Don Vito Corleone, the head of a New York Mafia family, oversees his daughter's wedding. 
         His beloved son Michael has just come home from the war, but does not intend to become part of his father's business. 
         Through Michael's life the nature of the family business becomes clear. The business of the family is just like the head of the family, 
@@ -17,4 +23,8 @@
         </p-footer>
 </p-dialog>
 
-<button type="button" (click)="showDialog()" pButton label="Show"></button>
+<button type="button" (click)="showDialog()" pButton label="Show-Dialog"></button> 
+
+
+  <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" appendTo="body"></p-confirmDialog>
+  <button type="text" (click)="confirm()" pButton icon="fa-check" label="ConfirmDialog"></button>
