@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -37,9 +38,15 @@ import {
   GalleriaModule,
   DragDropModule,
   DataGridModule,
-  TreeTableModule
+  TreeTableModule,
+  ProgressSpinnerModule,
+  InplaceModule,
+  DialogModule,
+  ConfirmDialogModule
  } from 'primeng/primeng';
 import {CommonModule} from '@angular/common';
+
+import { ConfirmationService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -61,6 +68,7 @@ import {CommonModule} from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CommonModule,       
     AngularFontAwesomeModule,
@@ -82,9 +90,14 @@ import {CommonModule} from '@angular/common';
     GalleriaModule,
     DragDropModule,
     DataGridModule,
-    TreeTableModule
+    TreeTableModule,
+    ProgressSpinnerModule,
+    InplaceModule,
+    DialogModule,
+    ConfirmDialogModule,
+
   ],
-  providers: [],
+  providers: [ConfirmationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

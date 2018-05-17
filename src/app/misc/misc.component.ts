@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfirmationService } from 'primeng/api';
 
 @Component({
   selector: 'app-misc',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiscComponent implements OnInit {
 
-  constructor() { }
+  constructor(private confirmationService: ConfirmationService) {}
 
+    // confirm() {
+    //     this.confirmationService.confirm({
+    //         message: 'Are you sure that you want to perform this action?',
+    //         accept: () => {
+    //             //Actual logic to perform a confirmation
+    //         }
+    //     });
+    // }
   ngOnInit() {
   }
 

@@ -16,7 +16,13 @@ export class OverlayComponent implements OnInit {
   visibleSidebar4;
   
   visibleSidebar5;
-  
+
+  display: boolean = false;
+
+  showDialog() {
+      this.display = true;
+  }
+
   constructor() { }
 
   ngOnInit() {

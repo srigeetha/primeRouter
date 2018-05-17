@@ -1,5 +1,35 @@
-<p-treeTable [value]="files">
-  <p-column field="name" header="Name"></p-column>
-  <p-column field="size" header="Size"></p-column>
-  <p-column field="type" header="Type"></p-column>
-</p-treeTable>
+<!-- <div>
+  Confirmation Dialo
+  <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425" [appendTo]="body" showEffect="fade" modal="modal"></p-confirmDialog>
+  <button type="text" (click)="confirm()" pButton icon="fa-check" label="Confirm"></button>
+</div> -->
+<div>
+  Misc Inplace
+  <p-inplace>
+    <span pInplaceDisplay>
+      Click to Edit
+    </span>
+    <span pInplaceContent>
+      <input type="text" value="PrimeNG" pInputText>
+    </span>
+  </p-inplace>
+  <br>
+</div>
+<div>
+  Treetable
+  <p-treeTable [value]="files">
+    <p-column field="name" header="Name"></p-column>
+    <p-column field="size" header="Size"></p-column>
+    <p-column field="type" header="Type"></p-column>
+  </p-treeTable>
+  <br>
+</div>
+<div>
+  p-progressSpinners
+  <h3>Basic</h3>
+  <p-progressSpinner [style]="{ height: '50px'}"></p-progressSpinner>
+
+  <h3>Custom</h3>
+  <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="8" fill="#EEEEEE" animationDuration="5s"></p-progressSpinner>
+  <br>
+</div>
