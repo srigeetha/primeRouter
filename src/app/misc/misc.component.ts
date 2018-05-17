@@ -9,6 +9,7 @@ export class MiscComponent implements OnInit {
 
   constructor() {}
 
+  value: number = 40;
   
   ngOnInit() {
   }

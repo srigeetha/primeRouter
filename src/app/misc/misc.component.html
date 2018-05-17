@@ -11,15 +11,7 @@
   </p-inplace>
   <br>
 </div>
-<div>
-  Treetable
-  <p-treeTable [value]="files">
-    <p-column field="name" header="Name"></p-column>
-    <p-column field="size" header="Size"></p-column>
-    <p-column field="type" header="Type"></p-column>
-  </p-treeTable>
-  <br>
-</div>
+
 <div>
   p-progressSpinners
   <h3>Basic</h3>
@@ -28,4 +20,8 @@
   <h3>Custom</h3>
   <p-progressSpinner [style]="{width: '50px', height: '50px'}" strokeWidth="8" fill="#EEEEEE" animationDuration="5s"></p-progressSpinner>
   <br>
+</div>
+<div>
+  ProgressBar
+  <p-progressBar [value]="value"></p-progressBar>
 </div>

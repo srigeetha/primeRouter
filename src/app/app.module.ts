@@ -21,6 +21,7 @@ import { MiscComponent } from './misc/misc.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { 
   RadioButtonModule,
+  ProgressBarModule,
   CheckboxModule,
   ButtonModule,
   PaginatorModule,
@@ -95,9 +96,11 @@ import { ConfirmationService } from 'primeng/api';
     InplaceModule,
     DialogModule,
     ConfirmDialogModule,
-
+    ProgressBarModule
   ],
-  providers: [ConfirmationService],
+  providers: [
+    ConfirmationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
