@@ -43,11 +43,12 @@ import {
   ProgressSpinnerModule,
   InplaceModule,
   DialogModule,
-  ConfirmDialogModule
+  ConfirmDialogModule,
+  StepsModule
  } from 'primeng/primeng';
 import {CommonModule} from '@angular/common';
 
-import { ConfirmationService } from 'primeng/api';
+import { ConfirmationService,MenuItem } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import { ConfirmationService } from 'primeng/api';
     InplaceModule,
     DialogModule,
     ConfirmDialogModule,
-    ProgressBarModule
+    ProgressBarModule,
+    StepsModule
   ],
   providers: [
     ConfirmationService
