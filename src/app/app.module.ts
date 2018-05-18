@@ -49,6 +49,7 @@ import {
 import {CommonModule} from '@angular/common';
 
 import { ConfirmationService,MenuItem } from 'primeng/api';
+import { MiscService } from './misc/miscService';
 
 @NgModule({
   declarations: [
@@ -101,7 +102,8 @@ import { ConfirmationService,MenuItem } from 'primeng/api';
     StepsModule
   ],
   providers: [
-    ConfirmationService
+    ConfirmationService,
+    MiscService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MiscService } from './miscService';
+import { Imisc } from './miscInter';
 
 @Component({
   selector: 'app-misc',
@@ -6,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./misc.component.css']
 })
 export class MiscComponent implements OnInit {
+ 
+  inplacetext:string="SriGeetha";
 
-  constructor() {}
+  details: Imisc[];
+  constructor(private serv: MiscService) {}
 
   value: number = 40;
   
   ngOnInit() {
+    this.details = this.serv.getDetails();
   }
 
 }

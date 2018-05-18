@@ -1,4 +1,19 @@
 
+<div style="padding-top: 350px;">
+  <p-dataGrid [value]="details">
+  <p-header>
+      Data Grid
+  </p-header>
+  <ng-template pTemplate="item">
+      <div style="padding-top:3px" *ngFor="let data of details" class="ui-g-12 ui-md-3">
+          <p-panel  [style]="{'text-align':'center'}">
+              {{data.name}}-{{details.code}}
+          </p-panel>
+      </div>
+  </ng-template>
+</p-dataGrid>
+
+
 <div>
   Misc Inplace
   <p-inplace>
@@ -6,7 +21,7 @@
       Click to Edit
     </span>
     <span pInplaceContent>
-      <input type="text" value="PrimeNG" pInputText>
+      <input type="text" [(ngModel)]="inplacetext" pInputText>
     </span>
   </p-inplace>
   <br>
@@ -24,4 +39,5 @@
 <div>
   ProgressBar
   <p-progressBar [value]="value"></p-progressBar>
+</div>
 </div>
